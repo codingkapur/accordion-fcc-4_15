@@ -1,7 +1,14 @@
+import Questions from './components/Questions'
+
 function App() {
   return (
     <main className="main-container">
-      <h1>Hello Accordion</h1>
+      <div className="main__left">
+      <h1>Questions And Answers About Login</h1>
+      </div>
+      <div className= "main_right">
+        <Questions />
+      </div>
     </main>
   );
 }
