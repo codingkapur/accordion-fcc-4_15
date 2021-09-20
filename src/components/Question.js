@@ -1,6 +1,17 @@
-function Question() {
+import {useState} from 'react'
+
+function Question({faq}) {
+
+    const [faqState, setfaqState] = useState(false)
+
     return (
-        <h3>Hi! I am a question</h3>
+        <div className="question__container">
+            <div className="question__top-row">
+                <p className="question">{faq.title}</p>
+                <p className="btn" onClick={() => setfaqState(!faqState)}>{faqState? '-' : '+'}</p>
+            </div>
+            <p className="answer">{faqState? faq.info : ''}</p>
+        </div>
     )
 }
 

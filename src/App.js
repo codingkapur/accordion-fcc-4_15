@@ -2,11 +2,11 @@ import Questions from './components/Questions'
 
 function App() {
   return (
-    <main className="main-container">
+    <main className="main__container">
       <div className="main__left">
-      <h1>Questions And Answers About Login</h1>
+      <h1><span className="q">Questions</span> And <span className="a">Answers</span> About<br></br> <span className="l">Login</span></h1>
       </div>
-      <div className= "main_right">
+      <div className= "main__right">
         <Questions />
       </div>
     </main>
